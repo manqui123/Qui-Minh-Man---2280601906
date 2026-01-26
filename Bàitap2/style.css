@@ -1,0 +1,13 @@
+body {
+  font-family: Arial;
+  margin: 30px;
+}
+
+li {
+  margin: 6px 0;
+}
+
+.deleted {
+  text-decoration: line-through;
+  color: gray;
+}
