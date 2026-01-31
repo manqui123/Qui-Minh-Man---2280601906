@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard Products</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>DASHBOARD PRODUCTS</h2>
+
+<div class="controls">
+    <input type="text" id="search" placeholder="Tìm theo title...">
+
+    <select id="pageSize">
+        <option value="5">5 / trang</option>
+        <option value="10">10 / trang</option>
+        <option value="20">20 / trang</option>
+    </select>
+</div>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Image</th>
+            <th id="sortTitle">Title ⬍</th>
+            <th id="sortPrice">Price ⬍</th>
+            <th>Category</th>
+        </tr>
+    </thead>
+    <tbody id="tableBody"></tbody>
+</table>
+
+<div class="pagination">
+    <button id="prev">Prev</button>
+    <span id="pageInfo"></span>
+    <button id="next">Next</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

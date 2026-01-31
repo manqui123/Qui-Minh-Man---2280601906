@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+.controls {
+    margin-bottom: 10px;
+}
+
+input, select {
+    padding: 6px;
+    margin-right: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+/* 1 dòng đen - 1 dòng trắng */
+tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+/* Hiển thị toàn bộ hình */
+img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+/* Hover description */
+.title-cell {
+    position: relative;
+}
+
+.desc {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #333;
+    color: #fff;
+    padding: 6px;
+    width: 250px;
+    z-index: 10;
+    text-align: left;
+    font-size: 13px;
+}
+
+.title-cell:hover .desc {
+    display: block;
+}
+
+th {
+    cursor: pointer;
+}
+
+.pagination {
+    margin-top: 15px;
+}
